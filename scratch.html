@@ -1,0 +1,126 @@
+<!--
+It must include the following as a demonstration of your ability to write HTML and CSS:
+
+An on-page anchor
+
+A live and interactive embedded Tableau graph (not just a picture of one).
+This graph can be about anything. It doesn’t have to be a graph you created, although it certainly can be.
+A quick Google search will show you where to find cool Tableau visualizations.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content=""> <!-- might add these in later-->
+        <meta name="author" content="">
+        <title>Scratch</title>
+        <!--styles from scratch + navbar styles from styles css-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""> <!-- for Black Veil Brides to match their website -->
+        <link href="css/scratch.css" rel="stylesheet">
+
+    
+       
+    </head>
+    <body style="background-color:rgba(0,0,0,0);" class="display-flex flex-direction">
+        <main class="flex-shrink">
+            <!-- Navigation so you can get back to other pages (you can't reach this page from the others though)-->
+            <nav class="navbar navbar-expand-lg navbar-light ptopbot-3">
+                <div class="container pside-5">
+                    <a class="navbar-brand" href="index.html" id="top"><span class="bolder title">To The Hub</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <!--unordered list embedded in an ordered list... also toggle nav bar :) -->
+                        <ul class="navbar-nav mbot small bolder">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../admin-anlytics/login.html">Log in</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </main>
+        <!--header-->
+        <!-- -->
+        <header class="ptopbot-5">
+            <div class="container mtopbot-5">
+                <div class="text-centered mb-5">
+                    <h1 class="bolder mb-0"><span class="bvb">Black Veil Brides</span></h1>
+                </div>
+            </div>
+
+            <!-- Embeded Youtube Link-->
+            <div class="video">
+                <iframe width="560px" height="315px" src="https://www.youtube.com/embed/iWZdIqpf5Tk?si=w88rLcUc81SgTtjkcontrols=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <p>&nbsp;</p>
+            <div class="descript-text">
+                <h5 class="title pside-5">Wretched and Divine: The Story of the Wild Ones is the third studio album by American rock band Black Veil Brides. It is a rock opera concept album that was released through Lava Records/Universal Republic Records on January 8, 2013.</h5>
+                <a class="title pside-5" href="https://blackveilbrides.net/">see their website</a>
+            </div>
+
+        
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+
+            <!-- tableau embeded -->
+            <div class="video pside-5" id='viz1713402440164' style='position: relative'>
+                <noscript>
+                    <a href='#'>
+                        <img alt='Sheet 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ho&#47;Hot100SpotifyPopulartiy&#47;Sheet1&#47;1_rss.png' style='border: none' />
+                    </a>
+                </noscript>
+                <object class='tableauViz'  style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='site_root' value='' />
+                    <param name='name' value='Hot100SpotifyPopulartiy&#47;Sheet1' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ho&#47;Hot100SpotifyPopulartiy&#47;Sheet1&#47;1.png' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='en-US' />
+                </object>
+            </div>
+
+            <script type='text/javascript'>                    
+            var divElement = document.getElementById('viz1713402440164');                    
+            var vizElement = divElement.getElementsByTagName('object')[0];                    
+            vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
+            var scriptElement = document.createElement('script');                    
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+            </script>
+
+
+            <!--image not from bootstrap theme-->
+            <!--keep center with relative sizing-->
+            <div class="display-flex justify-content-center mt-5 mt-0">
+                <div class="profile">
+                    <img class="img" src="assets/bvbw+d.png" alt="Wretched and Divine Cover">
+                </div>
+            </div>
+        </header>
+
+    
+     
+    
+        <footer class="ptopbot-4 mt-auto">
+            <div class="container">
+                <div class="text-centered">
+                    <a class="small m-0" href="#top">Back to Top</a>
+                </div>
+            </div>
+        </footer>
+
+     <!-- Bootstrap core JS-->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
